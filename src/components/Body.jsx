@@ -6,6 +6,7 @@ import RomanNum from './RomanNum'
 import ScientificNum from './ScientificNum'
 function Body() {
     const { input, setInput, handlesSymbol, symbols } = useContext(CalContext)
+    
     return (
         <main>
             <div className={symbols ? "big-container" : "container"}>

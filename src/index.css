@@ -42,10 +42,8 @@ body {
   margin: 20px 10px 20px;
   display: block;
 }
-
 .input-field {
   background-color: transparent;
-  color: white;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -55,11 +53,10 @@ input {
   border: none;
   outline: none;
   text-align: right;
-  font-size: 2rem;
+  font-size: 3rem;
   height: 4rem;
-}
-input {
   color: white;
+  padding-right:.5rem ;
 }
 
 /* NUMBERS */
@@ -70,7 +67,6 @@ input {
 
 button {
   border: 1px solid #d1acf0;
-  /* font-size: 1.5rem; */
   padding: 1.2rem;
   cursor: pointer;
   width: 100%;
@@ -107,21 +103,27 @@ button:hover {
 
 /* responsiveness */
 
-@media only screen and (max-width: 580px) {
+ @media (max-width: 600px) {
   .rotate {
     visibility: hidden;
   }
-
-  /* .wrapper,
+.symbols{
+  display: none;
+}
+  .wrapper,
   .big-wrapper {
     width: 100%;
-  } */
+  }
 }
 
 @media (orientation: landscape) {
   .rotate {
     visibility: visible;
   }
-
-
+.symbols {
+  display: grid;
+  grid-template-columns: repeat(4, 68px);
+  grid-template-rows: repeat(4, 50px);
 }
+
+} 
