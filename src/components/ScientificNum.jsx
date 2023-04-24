@@ -2,115 +2,115 @@ import React from 'react'
 import { useContext } from 'react'
 import CalContext from './Context'
 function ScientificNum() {
-    const { symbols, setResult, input, result, handlesValue } = useContext(CalContext)
+    const { symbols, setInput, input, result, handlesValue } = useContext(CalContext)
     return (
         <div className="">
             <div className={symbols ? "symbols" : "nullsymbols"}>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.pow(input, 2))}
+                    onClick={() => setInput(Math.pow(input, 2))}
                 >
                     x<sup>2</sup>
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.pow(input, 3))}
+                    onClick={() => setInput(Math.pow(input, 3))}
                 >
                     x<sup>3</sup>
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.pow(input, 1 / 3))}
+                    onClick={() => setInput(Math.pow(input, 1 / 3))}
                 >
                     &#8731;x
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.sqrt(input))}
+                    onClick={() => setInput(Math.sqrt(input))}
                 >
                     &#8730;x
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.sin(input))}
+                    onClick={() => setInput(Math.sin(input))}
                 >
                     sin
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.cos(input))}
+                    onClick={() => setInput(Math.cos(input))}
                 >
                     cos
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.exp(input))}
+                    onClick={() => setInput(Math.exp(input))}
                 >
                     e
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.log(input))}
+                    onClick={() => setInput(Math.log(input))}
                 >
                     In{" "}
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.log2(input))}
+                    onClick={() => setInput(Math.log2(input))}
                 >
                     log<sub>2</sub>
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.log10(input))}
+                    onClick={() => setInput(Math.log10(input))}
                 >
                     Log<sub>10</sub>
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.tanh(input))}
+                    onClick={() => setInput(Math.tanh(input))}
                 >
                     tanh
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.cosh(input))}
+                    onClick={() => setInput(Math.cosh(input))}
                 >
                     cosh
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.trunc(result))}
+                    onClick={() => setInput(Math.trunc(input))}
                 >
                     trunc
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.abs(result))}
+                    onClick={() => setInput(Math.abs(input))}
                 >
                     abs
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.sinh(result))}
+                    onClick={() => setInput(Math.sinh(input))}
                 >
                     sinh
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.PI)}
+                    onClick={() => setInput(Math.PI)}
                 >
                     &#960;
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.sign(result))}
+                    onClick={() => setInput(Math.sign(input))}
                 >
                     sign
                 </button>
                 <button
                     className="symbol-buttons"
-                    onClick={() => setResult(Math.random(result))}
+                    onClick={() => setInput(Math.random(input))}
                 >
                     rand
                 </button>
